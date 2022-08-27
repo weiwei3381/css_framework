@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动样式</title>
+    <style>
+        body{
+            /* 浮动元素不在正常文档流，无法撑开父容器内容区域 */
+            /* 俗称“高度塌陷”问题 */
+            border: 1px black solid;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            /* 脱离文档流并靠着父容器的左边或者右边， */
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+            /* 多个浮动元素相互之间挨着 */
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- 必须要清除浮动，否则这些文字就挨着浮动元素 -->
+    测试文本
+</body>
+</html>

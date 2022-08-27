@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            position: relative;
+            /* 相对位置不脱离文档流，他初始的位置就是他应该的位置的左上角，然后用lift：100px表示移动之后他左边距离初始位置100px
+            
+            不过是按照移动后的位置进行计算，即初始位置相对于移动后位置的偏移量，所以跟他实际移动的方向是反的 */
+            left:100px;
+            top: 10px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1"></div> 
+   <div class="box2"></div> 
+   <div class="box3"></div> 
+</body>
+</html>
