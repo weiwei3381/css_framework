@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内联与块的上下左右居中布局</title>
+    <style>
+        /* 使用flex实现文字居中对齐，也可改成align-items:center */
+        /* .box{
+            width: 300px;
+            height: 200px;
+            background: skyblue;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+        } */
+        /* 设置行高为元素高度不适合多行文字，仅适合单行文字 */
+        /* .box{
+            width: 300px;
+            height: 200px;
+            background: skyblue;
+            line-height: 200px;
+        } */
+
+        /* 使用弹性布局让div居中 */
+        /* .box{
+            width: 300px;
+            height: 200px;
+            background: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box div{
+            width: 100px;
+            height: 100px;
+            background: pink;
+        } */
+
+        /* 使用position定位 */
+        /* .box{
+            width: 300px;
+            height: 200px;
+            background: skyblue;
+            position: relative;
+        }
+        .box div{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        } */
+        .box{
+            width: 300px;
+            height: 200px;
+            background: skyblue;
+            display: flex;
+        }
+        .box div{
+            width: 100px;
+            height: 50px;
+            background: pink;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 要求，需要实现文字的居中对齐 -->
+    <!-- <div class="box">
+        测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+    </div> -->
+
+    <!-- 要求：让子div居中对齐 -->
+    <div class="box">
+        <div></div>
+    </div>
+</body>
+</html>

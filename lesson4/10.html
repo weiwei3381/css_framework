@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow子项属性</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 300px;
+            background: pink;
+            display: flex;
+        }
+
+        .main div{
+            width: 75px;
+            height: 50px;
+            border: 1px black solid;
+            background: skyblue;
+            flex-grow: 1.5;
+        }
+
+        .main2{
+            width: 500px;
+            height: 300px;
+            background: skyblue;
+            display: flex; 
+        }
+
+        .main2 div:nth-of-type(1){
+            width: 100px;
+            height: 100px;
+            background: pink;
+            flex-grow: 1;
+
+        }
+        .main2 div:nth-of-type(2){
+            width: 200px;
+            height: 100px;
+            background: wheat;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="main">
+        <div>这是子项的内容这是子项的内容这是子项的内容这是子项的内容</div>
+    </div> -->
+    <div class="main2">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>

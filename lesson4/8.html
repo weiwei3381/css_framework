@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子项分组布局（使用div嵌套实现）</title>
+    <style>
+        .main{
+            height: 300px;
+            background: skyblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main div{
+            display: flex;
+            margin-left: 10px;
+        }
+
+        .main .box{
+            height: 50px;
+            width: 75px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <div class="box">1</div>
+            <div class="box">2</div>
+        </div>
+        <div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+</body>
+</html>
