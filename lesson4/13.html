@@ -19,12 +19,22 @@
             width: 100px;
             background: pink;
         }
+        .col2{
+            flex-grow: 1;
+            background: springgreen;
+        }
+        .col3{
+            width: 300px;
+            background: steelblue;
+        }
     </style>
 </head>
 <body>
     <div class="main">
+        <!-- 左侧一列固定宽度，中间一列自适应宽度，右侧一列固定宽度 -->
         <div class="col1"></div>
-        <div class="col2"></div>
+        <div class="col2">这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况这是中间一列自适应宽度大小情况</div>
+        <div class="col3">这是右侧宽度</div>
     </div>
 </body>
 </html>
