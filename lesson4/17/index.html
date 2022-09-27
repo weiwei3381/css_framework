@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例－知乎导航</title>
+    <link rel="stylesheet" href="./iconfont.css">
+    <style>
+        body {
+            margin: 0;
+            background: #f6f6f6;
+        }
+
+        .header-container {
+            background: white;
+
+        }
+
+        .header-wrapper {
+            margin: 0 auto;
+            height: 52px;
+            min-width: 800px;
+            max-width: 1156px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo {
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+
+        .header-nav {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .header-nav li {
+            margin-right: 30px;
+        }
+
+        .header-search {
+            height: 20px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-search-wrapper{
+            background: #f6f6f6;
+            max-width: 482px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+            border-radius: 100px;
+        }
+
+
+
+        .header-search-input:focus{
+            border-color: none;
+            outline: 0;
+            
+        }
+        .header-search-input{
+            border: none;
+            background: none;
+            margin: 0 20px;
+            width: 100px;
+            
+        }
+
+        .header-search-wrapper i{
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .header-btn {
+            display: flex;
+        }
+
+        .header-btn-login {
+            width: 60px;
+            height: 32px;
+            border: 1px #0066ff solid;
+            border-radius: 3px;
+            color: #0066ff;
+            background: none;
+            cursor: pointer;
+            display: block;
+            margin-left: 20px;
+            
+        }
+
+        .header-btn-zhihu {
+            width: 90px;
+            height: 32px;
+            border: none;
+            border-radius: 3px;
+            background: #0066ff;
+            color: white;
+            cursor: pointer;
+            display: block;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="#"><img src="./logo.png" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <li>首页</li>
+                <li>会员</li>
+                <li>发现</li>
+                <li>等你来答</li>
+            </div>
+            <div class="header-search">
+                <div class="header-search-wrapper">
+                    <input type="text" class="header-search-input" placeholder="520文案">
+                    <i class="iconfont icon-fangdajing"></i>
+                </div>
+            </div>
+            <div class="header-btn">
+                <button class="header-btn-login">登录</button>
+                <button class="header-btn-zhihu">加入知乎</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
